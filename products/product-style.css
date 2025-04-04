@@ -178,6 +178,8 @@ footer {
 
     .nav-active {
         display: flex;
+        z-index: 1;
+        width: -webkit-fill-available;
     }
 
     .burger {

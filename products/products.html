@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nest-Cozy - Products</title>
-    <link rel="stylesheet" href="product-style.css" />
+    <link rel="stylesheet" href="./product-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,6 +51,15 @@
         <p>&copy; 2024 Nest-Cozy. All rights reserved.</p>
       </div>
     </footer>
-    <script src="products.js"></script>
+    <script src="./products.js"></script>
+    <script>
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+    </script>
   </body>
 </html>
