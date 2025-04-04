@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest-Cozy - Products</title>
+    <link rel="stylesheet" href="product-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0Hhonpy0AIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Nest-Cozy</div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <i class="fas fa-bars"></i>
+            <span class="burger-fallback">&#9776;</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Featured Products</h2>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Nest-Cozy. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+  </body>
+</html>
