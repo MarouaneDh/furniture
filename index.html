@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant Furniture - Your Home, Elevated</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0Hhonpy0AIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Elegant Furniture</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <i class="fas fa-bars"></i>
+            <span class="burger-fallback">&#9776;</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="parallax-bg"></div>
+      <div class="container hero-content">
+        <h1>Transform Your Space with Our Exquisite Furniture</h1>
+        <p>
+          Discover handcrafted pieces that blend style and comfort seamlessly.
+        </p>
+        <a href="#products" class="btn">Explore Our Collection</a>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="./images/Modern Sofa.jpeg" alt="Modern Sofa" />
+            <h3>Modern Sofa</h3>
+            <p>Elegant and comfortable sofa for your living room.</p>
+            <span class="price">$799</span>
+          </div>
+          <div class="product-item">
+            <img src="./images/Dining Table Set.jpeg" alt="Dining Table Set" />
+            <h3>Dining Table Set</h3>
+            <p>Stylish dining set perfect for family gatherings.</p>
+            <span class="price">$1200</span>
+          </div>
+          <div class="product-item">
+            <img src="./images/Bedroom Set.jpeg" alt="Bedroom Set" />
+            <h3>Bedroom Set</h3>
+            <p>Luxurious bedroom set for ultimate comfort.</p>
+            <span class="price">$1500</span>
+          </div>
+          <div class="product-item">
+            <img src="./images/Armchair.jpeg" alt="Armchair" />
+            <h3>Armchair</h3>
+            <p>Comfortable Armchair for reading and relaxing.</p>
+            <span class="price">$399</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          At Elegant Furniture, we are passionate about creating beautiful and
+          functional furniture that enhances your living space. With years of
+          experience, we focus on quality craftsmanship and timeless designs.
+          Our goal is to provide you with pieces that you'll love for years to
+          come.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have any questions or need assistance? Feel free to reach out to us.
+        </p>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Elegant Furniture. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+    </script>
+  </body>
+</html>
